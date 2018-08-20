@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Components</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="tachyons.min.css">
+</head>
+<body class="sans-serif">
+	<main id="app" class="pa2">
+		<h1>Components</h1>
+		
+		<h2>my-input</h2>
+		<p>Named props on a component bind to 'v-bind:propname' attributes, except the special prop 'value' which binds to 'v-model'</p>
+		<my-input v-model="aName" v-bind:name="'First name'"></my-input>
+		<p>Got: {{aName}}</p>
+		
+		<h2>number-list</h2>
+		<number-list v-model="numbers"></number-list>
+		
+		<h2>field-list</h2>
+		<field-list v-model="fields"></field-list>
+	</main>
+	
+	<script src="vue.js"></script>
+	<script src="2.Components.js"></script>
+</body>
+</html>
